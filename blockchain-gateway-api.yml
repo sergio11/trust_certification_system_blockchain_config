@@ -1,0 +1,70 @@
+spring:
+  # Mail
+  # output of emails
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ENC(iWAhNuq66KM19C9NnrN5sE3t2Y6cxGVuFh4Ouyj6Xh3NBXA7V4NN1Q==)
+    password: ENC(+clt1ygZG1HTJuancbLk9DGr9P0JHhOa+VEFBjAi4lo=)
+    properties:
+        mail:
+            smtp:
+                auth: true
+                starttls.enable: true
+                ssl.trust: smtp.gmail.com
+                connectiontimeout: 5000
+                timeout: 5000
+                writetimeout: 5000
+
+# JWT
+jwt:
+    token:
+        header: Authorization
+        secret: ENC(jE/+2/YpjTKkFpHbFlNzIVgpzHvwPhWo1+12ZaD3WLHGx5Ew+X2kvocuxV0qXp7Q)
+        expiration: 604800
+    route:
+        authentication:
+            path: /auth
+            refresh: refresh
+
+
+# REST
+api:
+    base:
+        path: /api/
+    version: v1
+
+# i18n Config
+i18n:
+    paramname: lang
+    default.locale: en_GB
+    locale.supported: es_ES,en_GB
+
+# Mail Properties
+mail:
+    templates:
+        base.dir: mail/templates/
+    resources:
+        base.dir: mail/resources/
+    registration.success.template.name: mail_template_registration_success
+    confirm.account.activation.template.name: mail_template_confirm_account_activation
+    from: ENC(2fhT/KBRBQbae36mvdNRWizBRsmWPfNtHKGVkiUDphs7DDGJz7EPcA==)
+
+
+##### Configuration for account management ####
+task:
+    account:
+        delete:
+             ## Task to remove expired password reset token
+            expired.tokens: 15 10 * * * ?
+            ## Task to remove inactive accounts
+            ## At second :15 of minute :10 of every hour
+            unactivated.accounts: 15 10 * * * ?
+        ## Task to cancel account removal processes
+        ## At second :15 of minute :20 of every hour
+        cancel.account.deletion.proccess: 15 20 * * * ?
+        ## Task for forwarding failed emails
+        ## At second :00, every 5 minutes starting at minute :00, of every hour
+        unsuccessful.mail.forwarding: 0 0/5 * * * ?
+        ## Number of emails to be forwarded
+        unsuccessful.mail.forwarding.number.of.emails.to.forward: 10
