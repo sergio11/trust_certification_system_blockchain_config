@@ -1,20 +1,34 @@
 spring:
-  # Mail
-  # output of emails
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    username: ENC(iWAhNuq66KM19C9NnrN5sE3t2Y6cxGVuFh4Ouyj6Xh3NBXA7V4NN1Q==)
-    password: ENC(+clt1ygZG1HTJuancbLk9DGr9P0JHhOa+VEFBjAi4lo=)
-    properties:
-        mail:
-            smtp:
-                auth: true
-                starttls.enable: true
-                ssl.trust: smtp.gmail.com
-                connectiontimeout: 5000
-                timeout: 5000
-                writetimeout: 5000
+    cloud:
+        stream:
+            kafka:
+                binder:
+                    brokers: kafka:9092
+                    auto-create-topics: true
+                    configuration.auto.offset.reset: latest
+            bindings:
+                caInitialFunds-out-0:
+                    destination: CA-initial-funds-v1
+                certificationCourseRegistration-out-0:
+                    destination: CC-registration-v1
+            function:
+                autodetect: false
+    # Mail
+    # output of emails
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: ENC(iWAhNuq66KM19C9NnrN5sE3t2Y6cxGVuFh4Ouyj6Xh3NBXA7V4NN1Q==)
+        password: ENC(+clt1ygZG1HTJuancbLk9DGr9P0JHhOa+VEFBjAi4lo=)
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls.enable: true
+                    ssl.trust: smtp.gmail.com
+                    connectiontimeout: 5000
+                    timeout: 5000
+                    writetimeout: 5000
 
 # JWT
 jwt:

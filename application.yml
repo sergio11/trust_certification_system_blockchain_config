@@ -1,12 +1,13 @@
 spring:
-  data:
-    mongodb:
-        authentication-database: admin
-        database: trustcertificationsystem
-        host: mongo
-        port: 27017
-        username: ENC(vb0mlnK7rEnJyAw459NoSg==)
-        password: ENC(dT+5AMBOTacnNnBTqxt12g==)
+    data:
+        mongodb:
+            authentication-database: admin
+            database: trustcertificationsystem
+            host: mongo
+            port: 27017
+            username: ENC(vb0mlnK7rEnJyAw459NoSg==)
+            password: ENC(dT+5AMBOTacnNnBTqxt12g==)
+
   
 ## Trust Certification System Props
 trust:
