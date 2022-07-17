@@ -14,15 +14,15 @@ trust:
         system:
             chain-id: 85
             wallet-directory: /opt/wallets
-            client-address: http://bootstrap:8545
+            client-address: http://192.168.1.39:8545
             root-public-key: "0xE545f3b554175BABcBeF152D4516Ff90455095EE"
             root-private-key: ENC(7k5dAObOTy1arUeaWbSG1mldiWDR/3mIJHqqRnXivkXaTpjYkYMNTfy8Ivktio6I2qnT+QK6DetaWpIw3AZqVRhBoPRORiCcNGYwJZE5ly0=)
             gas-price: 1000000000
             gas-limit: 993613
             token-management-contract-address: "0x4e690116b461DB7E23f78E991F94dB8Eb1E26B55"
-            certification-authority-contract-address: "0x801db69e6D2dC0ED1A7Dac9B0be5D0921Dd4395C"
-            certification-course-contract-address: "0x6dF5B51DA5587611eAFd0AA7727f0a8CAf9B6B7C"
-            trust-certification-contract-address: "0xc9F57EA9418190f14bbF2d00E776462105ffe677"
+            certification-authority-contract-address: "0xc341CC01DB1cA6A2Eb1C864EBC8a2AADe725D55e"
+            certification-course-contract-address: "0x8f2A3B132023Bf33A25617B3C9B2Ca7896053441"
+            trust-certification-contract-address: "0x6dF5B51DA5587611eAFd0AA7727f0a8CAf9B6B7C"
             trust-ether-faucet-contract-address: "0x8F3FD73CbF7081D4E764b4ff7708cBB62950D301"
 
 ## SFTP Config
