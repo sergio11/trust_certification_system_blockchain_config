@@ -48,11 +48,6 @@ api:
         path: /api/
     version: v1
 
-# i18n Config
-i18n:
-    paramname: lang
-    default.locale: en_GB
-    locale.supported: es_ES,en_GB
 
 # Mail Properties
 mail:

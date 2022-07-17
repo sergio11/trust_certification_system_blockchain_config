@@ -34,6 +34,12 @@ sftp:
     password: ethsftp00
     remoteFolder: keystore/
 
+# i18n Config
+i18n:
+    paramname: lang
+    default.locale: en_GB
+    locale.supported: es_ES,en_GB
+
 ######## Encryption Configuration #####
 jasypt:
     encryptor:
