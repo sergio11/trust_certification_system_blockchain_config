@@ -37,7 +37,7 @@ sftp:
 ######## Encryption Configuration #####
 jasypt:
     encryptor:
-        password: a{uL#t#jkp,Kd[9{
+        password: ${JASYPT_ENCRYPTOR_PASSWORD}
 
 logging.level:
   org.springframework.cloud: DEBUG
