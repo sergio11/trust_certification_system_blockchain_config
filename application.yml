@@ -30,7 +30,7 @@ trust:
 ### Vault Config
 vault:
     uri: http://vault:8200
-    token: hvs.69oNnsgtmISrDLe73YCFV18j
+    token: hvs.snV6aFdHVyjzAO3PIk8N0ygh
     wallet-path: tcs-v1/wallets/
 
 
