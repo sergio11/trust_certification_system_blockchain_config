@@ -26,6 +26,14 @@ trust:
             trust-certification-contract-address: "0x6dF5B51DA5587611eAFd0AA7727f0a8CAf9B6B7C"
             trust-ether-faucet-contract-address: "0x8F3FD73CbF7081D4E764b4ff7708cBB62950D301"
 
+
+### Vault Config
+vault:
+    uri: http://vault:8200
+    token: ENC(ZBCsP7HARW2Z3z+6ZyeHJ3I6JzIyXhQMNUKOL1VExvLizPhxONm8+Q==)
+    wallet-path: tcs-v1/wallets/
+
+
 ## SFTP Config
 sftp:
     hostname: 192.168.1.39
