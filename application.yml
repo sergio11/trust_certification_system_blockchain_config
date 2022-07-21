@@ -34,6 +34,12 @@ vault:
     wallet-path: tcs-v1/wallets/
 
 
+#### Channels
+channels:
+    new-user-registration: newUserRegistrationProcessor-out-0
+    certification-course-registration: certificationCourseRegistration-out-0
+
+
 ## SFTP Config
 sftp:
     hostname: 192.168.1.39

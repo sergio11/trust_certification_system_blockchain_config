@@ -7,10 +7,10 @@ spring:
                     auto-create-topics: true
                     configuration.auto.offset.reset: latest
             bindings:
-                caInitialFunds-out-0:
-                    destination: CA-initial-funds-v1
+                newUserRegistrationProcessor-out-0:
+                    destination: new-user-registration-v1
                 certificationCourseRegistration-out-0:
-                    destination: CC-registration-v1
+                    destination: course-registration-v1
             function:
                 autodetect: false
     # Mail
