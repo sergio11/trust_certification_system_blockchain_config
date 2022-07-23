@@ -11,6 +11,8 @@ spring:
                     destination: new-user-registration-v1
                 certificationCourseRegistration-out-0:
                     destination: course-registration-v1
+                newCertificationRequest-out-0:
+                    destination: new-certification-request-v1
             function:
                 autodetect: false
     # Mail

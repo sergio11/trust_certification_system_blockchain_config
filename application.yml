@@ -38,6 +38,7 @@ vault:
 channels:
     new-user-registration: newUserRegistrationProcessor-out-0
     certification-course-registration: certificationCourseRegistration-out-0
+    new-certification-request: newCertificationRequest-out-0
 
 
 ## SFTP Config
