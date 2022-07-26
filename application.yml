@@ -49,6 +49,12 @@ sftp:
     password: ethsftp00
     remoteFolder: keystore/
 
+## IPFS Config
+ipfs:
+    ipv4:
+        address: 127.0.0.1
+        port: 5001
+
 # i18n Config
 i18n:
     paramname: lang
