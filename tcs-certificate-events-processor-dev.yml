@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    stream:
+          function:
+              definition: newCertificateIssuedProcessor;newIssueCertificateRequestProcessor
+          kafka:
+              binder:
+                  brokers: kafka:9092
+                  auto-create-topics: true
+                  configuration.auto.offset.reset: latest
+          default:
+            consumer:
+              concurrency: 2
+          bindings:
+              newIssueCertificateRequestProcessor-in-0:
+                  destination: new-certification-request-v1
+                  group: tcs-certificate-events-processor
+              newIssueCertificateRequestProcessor-out-0:
+                  destination: certification-issued-v1
+                  group: tcs-certificate-events-processor
+                  consumer:
+                      concurrency: 10
+                      max-attempts: 3

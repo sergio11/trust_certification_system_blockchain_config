@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    stream:
+          function:
+              definition: newUserRegistrationProcessor;userRegisteredProcessor
+          kafka:
+              binder:
+                  brokers: kafka:9092
+                  auto-create-topics: true
+                  configuration.auto.offset.reset: latest
+          default:
+            consumer:
+              concurrency: 2
+          bindings:
+              newUserRegistrationProcessor-in-0:
+                  destination: new-user-registration-v1
+                  group: tcs-user-events-processor
+              newUserRegistrationProcessor-out-0:
+                  destination: user-registered-v1
+              userRegisteredProcessor-in-0:
+                  destination: user-registered-v1
+                  group: tcs-user-events-processor
+                  consumer:
+                      concurrency: 10
+                      max-attempts: 3

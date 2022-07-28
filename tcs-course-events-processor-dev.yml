@@ -1,0 +1,28 @@
+spring:
+  cloud:
+    stream:
+          function:
+              definition: courseRegistrationRequestProcessor;courseRegisteredProcessor
+          kafka:
+              binder:
+                  brokers: kafka:9092
+                  auto-create-topics: true
+                  configuration.auto.offset.reset: latest
+          default:
+            consumer:
+              concurrency: 2
+          bindings:
+              courseRegistrationRequestProcessor-in-0:
+                  destination: course-registration-v1
+                  group: tcs-course-events-processor
+                  consumer:
+                      concurrency: 10
+                      max-attempts: 3
+              courseRegistrationRequestProcessor-out-0:
+                  destination: course-registered-v1
+              courseRegisteredProcessor-in-0:
+                  destination: course-registered-v1
+                  group: tcs-course-events-processor
+                  consumer:
+                      concurrency: 10
+                      max-attempts: 3
