@@ -13,6 +13,8 @@ spring:
                     destination: course-registration-v1
                 newCertificationRequest-out-0:
                     destination: new-certification-request-v1
+                newTokensOrderApprovedProcessor-out-0:
+                    destination: new-tokens-order-approved-v1
             function:
                 autodetect: false
     # Mail

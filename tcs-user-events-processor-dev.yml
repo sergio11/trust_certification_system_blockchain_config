@@ -2,7 +2,7 @@ spring:
   cloud:
     stream:
           function:
-              definition: newUserRegistrationProcessor;userRegisteredProcessor
+              definition: newUserRegistrationProcessor;userRegisteredProcessor;newTokensOrderApprovedProcessor;tokensOrderCompletedProcessor
           kafka:
               binder:
                   brokers: kafka:9092
@@ -19,6 +19,17 @@ spring:
                   destination: user-registered-v1
               userRegisteredProcessor-in-0:
                   destination: user-registered-v1
+                  group: tcs-user-events-processor
+                  consumer:
+                      concurrency: 10
+                      max-attempts: 3
+              newTokensOrderApprovedProcessor-in-0:
+                  destination: new-tokens-order-approved-v1
+                  group: tcs-user-events-processor
+              newUserRegistrationProcessor-out-0:
+                  destination: tokens-order-completed-v1
+              tokensOrderCompletedProcessor-in-0:
+                  destination: tokens-order-completed-v1
                   group: tcs-user-events-processor
                   consumer:
                       concurrency: 10
