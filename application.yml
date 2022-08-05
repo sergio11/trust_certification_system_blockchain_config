@@ -7,6 +7,22 @@ spring:
             port: 27017
             username: ENC(vb0mlnK7rEnJyAw459NoSg==)
             password: ENC(dT+5AMBOTacnNnBTqxt12g==)
+    # Mail
+    # output of emails
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: ENC(iWAhNuq66KM19C9NnrN5sE3t2Y6cxGVuFh4Ouyj6Xh3NBXA7V4NN1Q==)
+        password: ENC(+clt1ygZG1HTJuancbLk9DGr9P0JHhOa+VEFBjAi4lo=)
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls.enable: true
+                    ssl.trust: smtp.gmail.com
+                    connectiontimeout: 5000
+                    timeout: 5000
+                    writetimeout: 5000
 
   
 ## Trust Certification System Props
@@ -33,6 +49,15 @@ vault:
     token: hvs.snV6aFdHVyjzAO3PIk8N0ygh
     wallet-path: tcs-v1/wallets/
 
+# Mail Properties
+mail:
+    templates:
+        base.dir: mail/templates/
+    resources:
+        base.dir: mail/resources/
+    registration.success.template.name: mail_template_registration_success
+    confirm.account.activation.template.name: mail_template_confirm_account_activation
+    from: ENC(2fhT/KBRBQbae36mvdNRWizBRsmWPfNtHKGVkiUDphs7DDGJz7EPcA==)
 
 #### Channels
 channels:
