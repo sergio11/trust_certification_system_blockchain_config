@@ -1,19 +1,19 @@
 spring:
     data:
         mongodb:
-            authentication-database: admin
-            database: trustcertificationsystem
+            authentication-database: ENC(v0XrtgGRRooy/ws2Zl2b7A==)
+            database: ENC(wuO4zj9wryQbbblUsLTPVBmmkae5UiuDRcLQTUbfSzMdWehCzhkBLA==)
             host: mongo
             port: 27017
-            username: ENC(vb0mlnK7rEnJyAw459NoSg==)
-            password: ENC(dT+5AMBOTacnNnBTqxt12g==)
+            username: ENC(HtnPXTvQy9tOUMVdn92hfw==)
+            password: ENC(LaemS97jNcjhe2khU5blYg==)
     # Mail
     # output of emails
     mail:
         host: smtp.gmail.com
         port: 587
-        username: ENC(iWAhNuq66KM19C9NnrN5sE3t2Y6cxGVuFh4Ouyj6Xh3NBXA7V4NN1Q==)
-        password: ENC(+clt1ygZG1HTJuancbLk9DGr9P0JHhOa+VEFBjAi4lo=)
+        username: ENC(4q6DRq1kHLEPN183mZhxu8h5ae1P27AGqCkdwF0WCSeG45XW/Ph1jA==)
+        password: ENC(0gidX1BItOmyWVdGC1AiVFrrxLp5g4I8Kad7njt8e5P23inbKSorBg==)
         properties:
             mail:
                 smtp:
@@ -32,31 +32,32 @@ trust:
             chain-id: 85
             wallet-directory: /opt/wallets
             client-address: http://192.168.1.39:8545
-            root-public-key: "0xE545f3b554175BABcBeF152D4516Ff90455095EE"
-            root-private-key: ENC(7k5dAObOTy1arUeaWbSG1mldiWDR/3mIJHqqRnXivkXaTpjYkYMNTfy8Ivktio6I2qnT+QK6DetaWpIw3AZqVRhBoPRORiCcNGYwJZE5ly0=)
+            root-public-key: ENC(BfORbisouJS2+iVSM93dQk3KUDko016iWNhwwGJujTypZJiTF4YmOaA7HJ/nahBBkcUzuTECB0o=)
+            root-private-key: ENC(DBPrOVkSHBrKFVSQI9o1CI20OssGVBFjh+i353k2CN0FRarwYcD3Qfhqng4hsR6wbYwg//CDmgAo36y87M/mOLcTYBsliLhp17uoVUsPbvw=)
             gas-price: 1000000000
             gas-limit: 993613
-            token-management-contract-address: "0x4e690116b461DB7E23f78E991F94dB8Eb1E26B55"
-            certification-authority-contract-address: "0xc341CC01DB1cA6A2Eb1C864EBC8a2AADe725D55e"
-            certification-course-contract-address: "0x8f2A3B132023Bf33A25617B3C9B2Ca7896053441"
-            trust-certification-contract-address: "0x6dF5B51DA5587611eAFd0AA7727f0a8CAf9B6B7C"
-            trust-ether-faucet-contract-address: "0x8F3FD73CbF7081D4E764b4ff7708cBB62950D301"
+            token-management-contract-address: ENC(DDzVvELij/ZrWHN1ct6zaHJSw/Tm5a4ruhCeONW69svIdgfWHsyNG5UUZe6X02gI1KI1Xv1AFkc=)
+            certification-authority-contract-address: ENC(5KeNtOH5k54faziexSyJL3t93b0lg3cHW1BiqN/F/s3VM78xwKsbYVkeK0R45F0b6MSR6binILQ=)
+            certification-course-contract-address: ENC(DxtCwuYWktMaUsywz+3bA7Ezz8iuzzh33M8nXf1WOEnNb7fF/XklauXr09yStvx3e+reZD8/Dlo=)
+            trust-certification-contract-address: ENC(2FBGXAP6w9F/lcL/8SnVrlpZp6dVyTc+2McuUHwbBQ+/SP3INRHkxekDvPALKGDfGbLtasGkACs=)
+            trust-ether-faucet-contract-address: ENC(P1mt9BGIkXiBCe7NGgXFy6JcaEOKtqTM/+W/fduHoPEMNHyMTMghhNibHLviEis/BF7aj0rHI64=)
 
 
 ### Vault Config
 vault:
     uri: http://vault:8200
-    token: hvs.snV6aFdHVyjzAO3PIk8N0ygh
+    token: ENC(hEJvvT6lJ5Jzx3sWcCR6c7pnw7SzeSMHRR4A1RhzaxHSQ6S3yind+g==)
     wallet-path: tcs-v1/wallets/
 
 # Mail Properties
 mail:
     templates:
         base.dir: mail/templates/
+        accounts:
+            pending-validation: user_pending_validation_mail_template
+            user-activated: user_activated_mail_template
     resources:
         base.dir: mail/resources/
-    registration.success.template.name: mail_template_registration_success
-    confirm.account.activation.template.name: mail_template_confirm_account_activation
     from: ENC(2fhT/KBRBQbae36mvdNRWizBRsmWPfNtHKGVkiUDphs7DDGJz7EPcA==)
 
 #### Channels
@@ -71,8 +72,8 @@ channels:
 sftp:
     hostname: 192.168.1.39
     port: 2222
-    username: ethsftp
-    password: ethsftp00
+    username: ENC(hc4XhZ8OKfdY2IiHOi12qA==)
+    password: ENC(o8n88SOqS0YTLHY7WPUL3RYn6Er40+aW)
     remoteFolder: keystore/
 
 ## IPFS Config

@@ -22,12 +22,23 @@ spring:
 jwt:
     token:
         header: Authorization
-        secret: ENC(jE/+2/YpjTKkFpHbFlNzIVgpzHvwPhWo1+12ZaD3WLHGx5Ew+X2kvocuxV0qXp7Q)
+        secret: ENC(taz+v24xKk1PfMFbPCf6BKJ6iAzPIsC2reVW6JIzMU14vkKthnvjXPZO+dDxwT/i)
         expiration: 604800
     route:
         authentication:
             path: /auth
             refresh: refresh
+
+# PayPal Gateway Config
+paypal:
+    client:
+        id: ENC(Fl67YKHtgtLFXSIjkbBmfz0Q+EJoaIggezk7IzJWc5pKTHr7WHRP0FVj8I+/fOKy/OZ6J0SRaD5hpAdqYvhiDAbzQzPCaBwVgYZbqBydFtYYu1iZQJbUpXjlRVQhgeAM)
+        secret: ENC(D2Xw9qRaLpqAAvpoUaB4YCo1r9Bif1lEYKO50JUEc9P2Qy09odVx7ifHIb9sL+hQOkXWMusQxWaFzPz5zavXH/ONTSxhtz4l44cWQQtVlDIoWm1dp3474MjyVd0KlZlB)
+
+# Crypto Compare Gateway
+cryptoCompare:
+    baseUrl: https://min-api.cryptocompare.com
+    apiKey: ENC(XX7EPAE/7iSPj+CQ0tHFA+jY1ITHXLf8iJh08R6W+u6IAuk5l28kIAVhHzDBWzH7PxTrLD++79pGuuN8Ih/MM4k35w/GMTTukOJIElMmmj4=)
 
 
 # REST
