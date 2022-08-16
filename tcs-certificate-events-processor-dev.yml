@@ -21,3 +21,15 @@ spring:
                   consumer:
                       concurrency: 10
                       max-attempts: 3
+
+
+# Certificate Generator Config
+certificateGenerator:
+  watermarkFile: tcs_certificate_background.pdf
+  templateFile: tcs_academic_certificate_template.docx
+  placeholders:
+    caName: "[[CA_NAME]]"
+    studentName: "[[STUDENT_NAME]]"
+    courseName: "[[COURSE_NAME]]"
+    studentQualification: "[[STUDENT_QUALIFICATION]]"
+    certificateDate: "[[CERTIFICATE_DATE]]"
