@@ -25,11 +25,12 @@ spring:
 
 # Certificate Generator Config
 certificateGenerator:
-  watermarkFile: tcs_certificate_background.pdf
-  templateFile: tcs_academic_certificate_template.docx
+  watermark-file: tcs_certificate_background.pdf
+  template-file: tcs_academic_certificate_template.docx
+  timestamp-authority: http://sha256timestamp.ws.symantec.com/sha256/timestamp
   placeholders:
-    caName: "[[CA_NAME]]"
-    studentName: "[[STUDENT_NAME]]"
-    courseName: "[[COURSE_NAME]]"
-    studentQualification: "[[STUDENT_QUALIFICATION]]"
-    certificateDate: "[[CERTIFICATE_DATE]]"
+    ca-name: "[[CA_NAME]]"
+    student-name: "[[STUDENT_NAME]]"
+    course-name: "[[COURSE_NAME]]"
+    student-qualification: "[[STUDENT_QUALIFICATION]]"
+    certificate-date: "[[CERTIFICATE_DATE]]"
