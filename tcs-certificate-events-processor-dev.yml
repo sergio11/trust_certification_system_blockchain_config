@@ -25,9 +25,19 @@ spring:
 
 # Certificate Generator Config
 certificateGenerator:
+  base-folder: /opt/generator/
   watermark-file: tcs_certificate_background.pdf
   template-file: tcs_academic_certificate_template.docx
   timestamp-authority: http://sha256timestamp.ws.symantec.com/sha256/timestamp
+  keystore:
+    file: tcs_keystore.jks
+    password: ENC(QLt7JSsTwN1hfLsu3VXObGmfaIRqsDhTYCS8uDbyiS0=)
+    certificate-alias: tcs
+    type: pkcs12
+  signature:
+    name: Trust Certification System
+    reason: Signature of digital certificates
+    contact-info: ENC(YHxRr2kT1/EV9etrCyDh+Y6vPpwkQg9S)
   placeholders:
     ca-name: "[[CA_NAME]]"
     student-name: "[[STUDENT_NAME]]"
