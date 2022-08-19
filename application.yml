@@ -32,8 +32,8 @@ trust:
             chain-id: 85
             wallet-directory: /opt/wallets
             client-address: http://192.168.1.39:8545
-            root-public-key: ENC(BfORbisouJS2+iVSM93dQk3KUDko016iWNhwwGJujTypZJiTF4YmOaA7HJ/nahBBkcUzuTECB0o=)
-            root-private-key: ENC(DBPrOVkSHBrKFVSQI9o1CI20OssGVBFjh+i353k2CN0FRarwYcD3Qfhqng4hsR6wbYwg//CDmgAo36y87M/mOLcTYBsliLhp17uoVUsPbvw=)
+            root-public-key: ENC(fSG23CzlK8YucyDdfOaTtOXclkwbFagfmAAOegXMBb3dVPGNdMzsIXhq69niX1UHwRMSjc1E5es=)
+            root-private-key: ENC(Svlr2J9QkdHdm0H/yxBRUUp6uK5QPH8uW7tyzB27XWOosaqg5HLEPdlEmXLaCNC5dBJPDJZQ374WRhwg7Zs+bt5DRoK0/SGQsGbbI5qfrQY=)
             gas-price: 1000000000
             gas-limit: 993613
             token-management-contract-address: ENC(2vvlITdGeh4Y1ht5ku/3f7c8yvnO8eF5SScUw9Zykit5+thLlpqZEpNe5HytTHJqU601SXpCiXQ=)
@@ -92,8 +92,6 @@ i18n:
 jasypt:
     encryptor:
         password: ${JASYPT_ENCRYPTOR_PASSWORD}
-        algorithm: PBEWithMD5AndTripleDES
-        iv-generator-classname: org.jasypt.iv.NoIvGenerator
 
 logging.level:
   org.springframework.cloud: DEBUG
