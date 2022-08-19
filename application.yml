@@ -32,8 +32,8 @@ trust:
             chain-id: 85
             wallet-directory: /opt/wallets
             client-address: http://192.168.1.39:8545
-            root-public-key: ENC(h+H2d3GkDzhvrs/FWJVBqsJaEJs01buG96bka+oRrCEzyHPImbNqFXa6DK2phM7kXL26f2PUlEs=)
-            root-private-key: ENC(Svlr2J9QkdHdm0H/yxBRUUp6uK5QPH8uW7tyzB27XWOosaqg5HLEPdlEmXLaCNC5dBJPDJZQ374WRhwg7Zs+bt5DRoK0/SGQsGbbI5qfrQY=)
+            root-public-key: ENC(MCWv+IGYU9JhHkyx4X/kUQRY3m1J3HqxYI4fkEZLp4mcS6irdOFytvsOw1EwvG90/qaXINvwqyI=)
+            root-private-key: ENC(ari+RGHwCGuqlTyrmBCUFSYiGUH5G8nIieWa4mYaV8Crjho5sCnDcit1DVfaVX8Vn+D7o717ZmHdPsb7nGzOimSGeKPHEmzXfuXTkFnJvlk=)
             gas-price: 1000000000
             gas-limit: 993613
             token-management-contract-address: ENC(2vvlITdGeh4Y1ht5ku/3f7c8yvnO8eF5SScUw9Zykit5+thLlpqZEpNe5HytTHJqU601SXpCiXQ=)
@@ -92,6 +92,7 @@ i18n:
 jasypt:
     encryptor:
         password: ${JASYPT_ENCRYPTOR_PASSWORD}
+        algorithm: PBEWithMD5AndTripleDES
 
 logging.level:
   org.springframework.cloud: DEBUG
