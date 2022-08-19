@@ -32,7 +32,7 @@ trust:
             chain-id: 85
             wallet-directory: /opt/wallets
             client-address: http://192.168.1.39:8545
-            root-public-key: ENC(fSG23CzlK8YucyDdfOaTtOXclkwbFagfmAAOegXMBb3dVPGNdMzsIXhq69niX1UHwRMSjc1E5es=)
+            root-public-key: ENC(h+H2d3GkDzhvrs/FWJVBqsJaEJs01buG96bka+oRrCEzyHPImbNqFXa6DK2phM7kXL26f2PUlEs=)
             root-private-key: ENC(Svlr2J9QkdHdm0H/yxBRUUp6uK5QPH8uW7tyzB27XWOosaqg5HLEPdlEmXLaCNC5dBJPDJZQ374WRhwg7Zs+bt5DRoK0/SGQsGbbI5qfrQY=)
             gas-price: 1000000000
             gas-limit: 993613
