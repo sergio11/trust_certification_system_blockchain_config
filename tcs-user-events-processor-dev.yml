@@ -26,7 +26,7 @@ spring:
               newTokensOrderApprovedProcessor-in-0:
                   destination: new-tokens-order-approved-v1
                   group: tcs-user-events-processor
-              newUserRegistrationProcessor-out-0:
+              newTokensOrderApprovedProcessor-out-0:
                   destination: tokens-order-completed-v1
               tokensOrderCompletedProcessor-in-0:
                   destination: tokens-order-completed-v1
