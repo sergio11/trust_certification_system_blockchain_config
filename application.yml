@@ -1,8 +1,8 @@
 spring:
     data:
         mongodb:
-            authentication-database: ENC(v0XrtgGRRooy/ws2Zl2b7A==)
-            database: ENC(wuO4zj9wryQbbblUsLTPVBmmkae5UiuDRcLQTUbfSzMdWehCzhkBLA==)
+            authentication-database: admin
+            database: trustcertificationsystem
             host: mongo
             port: 27017
             username: ENC(HtnPXTvQy9tOUMVdn92hfw==)
