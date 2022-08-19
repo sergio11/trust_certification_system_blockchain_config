@@ -92,6 +92,7 @@ i18n:
 jasypt:
     encryptor:
         password: ${JASYPT_ENCRYPTOR_PASSWORD}
+        algorithm: PBEWithMD5AndTripleDES
 
 logging.level:
   org.springframework.cloud: DEBUG
