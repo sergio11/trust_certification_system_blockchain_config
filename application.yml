@@ -56,6 +56,19 @@ mail:
         accounts:
             pending-validation: user_pending_validation_mail_template
             user-activated: user_activated_mail_template
+        certificates:
+            ca-disabled: ca_disabled_mail_template
+            ca-enabled: ca_enabled_mail_template
+            disabled: certificate_disabled_mail_template
+            enabled: certificate_enabled_mail_template
+            renewed: certificate_renewed_mail_template
+            request-accepted: certificate_request_accepted_mail_template
+            request-rejected: certificate_request_rejected_mail_template
+            visibility-changed: certificate_visibility_changed_mail_template
+            course-disabled: course_disabled_mail_template
+            course-enabled: course_enabled_mail_template
+            issue-certificate-request: issue_certificate_request_mail_template
+            new-course-registration-request: new_course_registration_requested_mail_template
     resources:
         base.dir: mail/resources/
     from: ENC(z3xt3g7BV8wn1K9hmNhKjZPIhcJVa54ZTvWqDJYdEw893v4NhHP+EA==)
