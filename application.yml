@@ -58,7 +58,7 @@ mail:
             user-activated: user_activated_mail_template
     resources:
         base.dir: mail/resources/
-    from: ENC(2fhT/KBRBQbae36mvdNRWizBRsmWPfNtHKGVkiUDphs7DDGJz7EPcA==)
+    from: ENC(z3xt3g7BV8wn1K9hmNhKjZPIhcJVa54ZTvWqDJYdEw893v4NhHP+EA==)
 
 #### Channels
 channels:
