@@ -36,11 +36,11 @@ trust:
             root-private-key: ENC(DBPrOVkSHBrKFVSQI9o1CI20OssGVBFjh+i353k2CN0FRarwYcD3Qfhqng4hsR6wbYwg//CDmgAo36y87M/mOLcTYBsliLhp17uoVUsPbvw=)
             gas-price: 1000000000
             gas-limit: 993613
-            token-management-contract-address: ENC(DDzVvELij/ZrWHN1ct6zaHJSw/Tm5a4ruhCeONW69svIdgfWHsyNG5UUZe6X02gI1KI1Xv1AFkc=)
-            certification-authority-contract-address: ENC(5KeNtOH5k54faziexSyJL3t93b0lg3cHW1BiqN/F/s3VM78xwKsbYVkeK0R45F0b6MSR6binILQ=)
-            certification-course-contract-address: ENC(DxtCwuYWktMaUsywz+3bA7Ezz8iuzzh33M8nXf1WOEnNb7fF/XklauXr09yStvx3e+reZD8/Dlo=)
-            trust-certification-contract-address: ENC(2FBGXAP6w9F/lcL/8SnVrlpZp6dVyTc+2McuUHwbBQ+/SP3INRHkxekDvPALKGDfGbLtasGkACs=)
-            trust-ether-faucet-contract-address: ENC(P1mt9BGIkXiBCe7NGgXFy6JcaEOKtqTM/+W/fduHoPEMNHyMTMghhNibHLviEis/BF7aj0rHI64=)
+            token-management-contract-address: ENC(2vvlITdGeh4Y1ht5ku/3f7c8yvnO8eF5SScUw9Zykit5+thLlpqZEpNe5HytTHJqU601SXpCiXQ=)
+            certification-authority-contract-address: ENC(7SUP+hEl/GvkxlZ1janiqlXuvRlZGtdBnNs8Hoay+oQa8+rjGAp1sLTkUj8gqogDQlGFLuQxJFU=)
+            certification-course-contract-address: ENC(ShFCYgTNxM5eqLx6GAI2tklFRtBuIKm7sOpg1Qypd+xJUq4BobGtPqphZkJA59r9OAfQMD4wUjA=)
+            trust-certification-contract-address: ENC(WKHGoNi8jyDjVSW8rnAFrCsJtay1gLUj1EQHeZwVM4njLosJmQitO7AUVxPXeopwVKFoQoSPXC4=)
+            trust-ether-faucet-contract-address: ENC(xbJoUoMPopbVtb5a8ZB9/G84KiO1pnLiVC2Q6Q3M5x/jkX6F8inDXCxeoqN5DEF6kNr8ghAK04s=)
 
 
 ### Vault Config
@@ -79,7 +79,7 @@ sftp:
 ## IPFS Config
 ipfs:
     ipv4:
-        address: 127.0.0.1
+        address: 192.168.1.39
         port: 5001
 
 # i18n Config
