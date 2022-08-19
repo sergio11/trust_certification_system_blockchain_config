@@ -2,11 +2,11 @@ spring:
     data:
         mongodb:
             authentication-database: admin
-            database: trustcertificationsystem
+            database: ${MONGO_DB}
             host: mongo
             port: 27017
-            username: ENC(HtnPXTvQy9tOUMVdn92hfw==)
-            password: ENC(LaemS97jNcjhe2khU5blYg==)
+            username: ${MONGO_ROOT_USER}
+            password: ${MONGO_ROOT_PASSWORD}
     # Mail
     # output of emails
     mail:
