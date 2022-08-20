@@ -40,6 +40,10 @@ cryptoCompare:
     baseUrl: https://min-api.cryptocompare.com
     apiKey: ENC(XX7EPAE/7iSPj+CQ0tHFA+jY1ITHXLf8iJh08R6W+u6IAuk5l28kIAVhHzDBWzH7PxTrLD++79pGuuN8Ih/MM4k35w/GMTTukOJIElMmmj4=)
 
+# Translations Config
+translations:
+    default-file-location: /opt/i18n/translation_default.xlsx
+
 
 # REST
 api:
