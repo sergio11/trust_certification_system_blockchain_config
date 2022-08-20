@@ -46,7 +46,7 @@ trust:
 ### Vault Config
 vault:
     uri: http://vault:8200
-    token: ENC(hEJvvT6lJ5Jzx3sWcCR6c7pnw7SzeSMHRR4A1RhzaxHSQ6S3yind+g==)
+    token: ENC(lxixxHxhpT29fyIXNOq9mVJGgHbbq6x5nK8lA8w88iGHjm4qZ4g9AQ==)
     wallet-path: tcs-v1/wallets/
 
 # Mail Properties
