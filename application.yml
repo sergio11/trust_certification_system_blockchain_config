@@ -110,5 +110,5 @@ jasypt:
 logging.level:
   org.springframework.cloud: DEBUG
   org.springframework.security: DEBUG
-  com.dreamsoftware.blockchaingateway: DEBUG
+  com.dreamsoftware.tcs: DEBUG
   logging.level.org.web3j.protocol.http: TRACE
