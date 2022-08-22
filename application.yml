@@ -69,6 +69,9 @@ mail:
             course-enabled: course_enabled_mail_template
             issue-certificate-request: issue_certificate_request_mail_template
             new-course-registration-request: new_course_registration_requested_mail_template
+            certificate-generated: certificate_generated_mail_template
+            certification-course-registered: certification_course_registered_mail_template
+            certificate-generated: user_order_completed_mail_templated
     resources:
         base.dir: mail/resources/
     from: ENC(z3xt3g7BV8wn1K9hmNhKjZPIhcJVa54ZTvWqDJYdEw893v4NhHP+EA==)
