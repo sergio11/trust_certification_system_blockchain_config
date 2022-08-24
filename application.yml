@@ -67,6 +67,7 @@ mail:
             visibility-changed: certificate_visibility_changed_mail_template
             course-disabled: course_disabled_mail_template
             course-enabled: course_enabled_mail_template
+            course-deleted: course_deleted_mail_template
             issue-certificate-request: issue_certificate_request_mail_template
             new-course-registration-request: new_course_registration_requested_mail_template
             certificate-generated: certificate_generated_mail_template
