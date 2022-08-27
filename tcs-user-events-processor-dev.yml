@@ -36,5 +36,16 @@ spring:
                   consumer:
                       concurrency: 10
                       max-attempts: 3
-              tokensOrderCompletedProcessor-ouy-0:
+              tokensOrderCompletedProcessor-out-0:
                   destination: notification-delivery-request-v1
+
+
+# Tasks Config
+task:
+  ## Task to remove inactive accounts
+  ## At second :15 of minute :10 of every hour
+  delete.unactivated.accounts: 15 10 * * * ?
+  ## Task to cancel account removal processes
+  ## At second :15 of minute :20 of every hour
+  cancel.account.deletion.proccess: 15 20 * * * ?
+        

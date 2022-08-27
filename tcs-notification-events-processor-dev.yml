@@ -35,6 +35,13 @@ spring:
                       concurrency: 10
                       max-attempts: 3
 
+# Tasks Config
+task:
+  ## Task for forwarding failed emails
+  ## At second :00, every 5 minutes starting at minute :00, of every hour
+  unsuccessful.mail.forwarding: 0 0/5 * * * ?
+  ## Number of emails to be forwarded
+  unsuccessful.mail.forwarding.number.of.emails.to.forward: 10
 
 # Mail Properties
 mail:
