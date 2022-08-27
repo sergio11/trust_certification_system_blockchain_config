@@ -1,0 +1,65 @@
+spring:
+  # Mail
+    # output of emails
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: ENC(4q6DRq1kHLEPN183mZhxu8h5ae1P27AGqCkdwF0WCSeG45XW/Ph1jA==)
+        password: ENC(2KVWtVyMCxpqRVn+CxY76dHyLBZ5z9gND9ZX8ts6fJ0=)
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls.enable: true
+                    ssl.trust: smtp.gmail.com
+                    connectiontimeout: 5000
+                    timeout: 5000
+                    writetimeout: 5000
+  cloud:
+    stream:
+          function:
+              definition: notificationDeliveryRequestProcessor
+          kafka:
+              binder:
+                  brokers: kafka:9092
+                  auto-create-topics: true
+                  configuration.auto.offset.reset: latest
+          default:
+            consumer:
+              concurrency: 2
+          bindings:
+              notificationDeliveryRequestProcessor-in-0:
+                  destination: notification-delivery-request-v1
+                  group: tcs-notification-events-processor
+                  consumer:
+                      concurrency: 10
+                      max-attempts: 3
+
+
+# Mail Properties
+mail:
+    templates:
+        base.dir: /opt/mail_templates
+        accounts:
+            pending-validation: user_pending_validation_mail_template
+            user-activated: user_activated_mail_template
+        certificates:
+            ca-disabled: ca_disabled_mail_template
+            ca-enabled: ca_enabled_mail_template
+            disabled: certificate_disabled_mail_template
+            enabled: certificate_enabled_mail_template
+            renewed: certificate_renewed_mail_template
+            request-accepted: certificate_request_accepted_mail_template
+            request-rejected: certificate_request_rejected_mail_template
+            visibility-changed: certificate_visibility_changed_mail_template
+            course-disabled: course_disabled_mail_template
+            course-enabled: course_enabled_mail_template
+            course-deleted: course_deleted_mail_template
+            issue-certificate-request: issue_certificate_request_mail_template
+            new-course-registration-request: new_course_registration_requested_mail_template
+            certificate-generated: certificate_generated_mail_template
+            certification-course-registered: certification_course_registered_mail_template
+            certificate-generated: user_order_completed_mail_templated
+    resources:
+        base.dir: /opt/mail_templates
+    from: ENC(z3xt3g7BV8wn1K9hmNhKjZPIhcJVa54ZTvWqDJYdEw893v4NhHP+EA==)

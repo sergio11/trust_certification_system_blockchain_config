@@ -15,12 +15,20 @@ spring:
               newIssueCertificateRequestProcessor-in-0:
                   destination: new-certification-request-v1
                   group: tcs-certificate-events-processor
+                  consumer:
+                    concurrency: 10
+                    max-attempts: 3
               newIssueCertificateRequestProcessor-out-0:
                   destination: certification-issued-v1
                   group: tcs-certificate-events-processor
+              newCertificateIssuedProcessor-in-0:
+                  destination: certification-issued-v1
+                  group: tcs-certificate-events-processor
                   consumer:
-                      concurrency: 10
-                      max-attempts: 3
+                    concurrency: 10
+                    max-attempts: 3
+              newCertificateIssuedProcessor-out-0:
+                  destination: notification-delivery-request-v1
 
 
 # Certificate Generator Config

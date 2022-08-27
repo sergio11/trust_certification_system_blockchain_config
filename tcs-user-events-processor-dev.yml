@@ -23,6 +23,8 @@ spring:
                   consumer:
                       concurrency: 10
                       max-attempts: 3
+              userRegisteredProcessor-out-0:
+                  destination: notification-delivery-request-v1
               newTokensOrderApprovedProcessor-in-0:
                   destination: new-tokens-order-approved-v1
                   group: tcs-user-events-processor
@@ -34,3 +36,5 @@ spring:
                   consumer:
                       concurrency: 10
                       max-attempts: 3
+              tokensOrderCompletedProcessor-ouy-0:
+                  destination: notification-delivery-request-v1

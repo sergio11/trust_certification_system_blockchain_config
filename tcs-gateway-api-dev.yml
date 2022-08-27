@@ -7,16 +7,26 @@ spring:
                     auto-create-topics: true
                     configuration.auto.offset.reset: latest
             bindings:
-                newUserRegistrationProcessor-out-0:
+                newUserRegistrationProcessor-in-0:
                     destination: new-user-registration-v1
-                certificationCourseRegistration-out-0:
+                certificationCourseRegistration-in-0:
                     destination: course-registration-v1
-                newCertificationRequest-out-0:
+                newCertificationRequest-in-0:
                     destination: new-certification-request-v1
-                newTokensOrderApprovedProcessor-out-0:
+                newTokensOrderApprovedProcessor-in-0:
                     destination: new-tokens-order-approved-v1
+                notificationDeliveryRequestProcessor-in-0:
+                    destination: notification-delivery-request-v1
             function:
                 autodetect: false
+
+# Stream Bridge Channels configuration
+channels:
+    new-user-registration: newUserRegistrationProcessor-in-0
+    certification-course-registration: certificationCourseRegistration-int-0
+    new-certification-request: newCertificationRequest-in-0
+    new-tokens-order-approved: newTokensOrderApprovedProcessor-in-0
+    notification-delivery-request: notificationDeliveryRequestProcessor-in-0
 
 # JWT
 jwt:

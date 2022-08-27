@@ -26,3 +26,5 @@ spring:
                   consumer:
                       concurrency: 10
                       max-attempts: 3
+              courseRegisteredProcessor-out-0:
+                  destination: notification-delivery-request-v1

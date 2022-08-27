@@ -7,82 +7,28 @@ spring:
             port: 27017
             username: ${MONGO_ROOT_USER}
             password: ${MONGO_ROOT_PASSWORD}
-    # Mail
-    # output of emails
-    mail:
-        host: smtp.gmail.com
-        port: 587
-        username: ENC(4q6DRq1kHLEPN183mZhxu8h5ae1P27AGqCkdwF0WCSeG45XW/Ph1jA==)
-        password: ENC(2KVWtVyMCxpqRVn+CxY76dHyLBZ5z9gND9ZX8ts6fJ0=)
-        properties:
-            mail:
-                smtp:
-                    auth: true
-                    starttls.enable: true
-                    ssl.trust: smtp.gmail.com
-                    connectiontimeout: 5000
-                    timeout: 5000
-                    writetimeout: 5000
 
   
-## Trust Certification System Props
-trust:
-    certification:
-        system:
-            chain-id: 85
-            wallet-directory: /opt/wallets
-            client-address: http://192.168.1.39:8545
-            root-public-key: ENC(MCWv+IGYU9JhHkyx4X/kUQRY3m1J3HqxYI4fkEZLp4mcS6irdOFytvsOw1EwvG90/qaXINvwqyI=)
-            root-private-key: ENC(ari+RGHwCGuqlTyrmBCUFSYiGUH5G8nIieWa4mYaV8Crjho5sCnDcit1DVfaVX8Vn+D7o717ZmHdPsb7nGzOimSGeKPHEmzXfuXTkFnJvlk=)
-            gas-price: 1000000000
-            gas-limit: 993613
-            token-management-contract-address: ENC(2vvlITdGeh4Y1ht5ku/3f7c8yvnO8eF5SScUw9Zykit5+thLlpqZEpNe5HytTHJqU601SXpCiXQ=)
-            certification-authority-contract-address: ENC(7SUP+hEl/GvkxlZ1janiqlXuvRlZGtdBnNs8Hoay+oQa8+rjGAp1sLTkUj8gqogDQlGFLuQxJFU=)
-            certification-course-contract-address: ENC(ShFCYgTNxM5eqLx6GAI2tklFRtBuIKm7sOpg1Qypd+xJUq4BobGtPqphZkJA59r9OAfQMD4wUjA=)
-            trust-certification-contract-address: ENC(WKHGoNi8jyDjVSW8rnAFrCsJtay1gLUj1EQHeZwVM4njLosJmQitO7AUVxPXeopwVKFoQoSPXC4=)
-            trust-ether-faucet-contract-address: ENC(xbJoUoMPopbVtb5a8ZB9/G84KiO1pnLiVC2Q6Q3M5x/jkX6F8inDXCxeoqN5DEF6kNr8ghAK04s=)
-
-
+## Ethereum Config
+ethereum:
+    chain-id: 85
+    wallet-directory: /opt/wallets
+    client-address: http://192.168.1.39:8545
+    root-public-key: ENC(MCWv+IGYU9JhHkyx4X/kUQRY3m1J3HqxYI4fkEZLp4mcS6irdOFytvsOw1EwvG90/qaXINvwqyI=)
+    root-private-key: ENC(ari+RGHwCGuqlTyrmBCUFSYiGUH5G8nIieWa4mYaV8Crjho5sCnDcit1DVfaVX8Vn+D7o717ZmHdPsb7nGzOimSGeKPHEmzXfuXTkFnJvlk=)
+    gas-price: 1000000000
+    gas-limit: 993613
+    token-management-contract-address: ENC(2vvlITdGeh4Y1ht5ku/3f7c8yvnO8eF5SScUw9Zykit5+thLlpqZEpNe5HytTHJqU601SXpCiXQ=)
+    certification-authority-contract-address: ENC(7SUP+hEl/GvkxlZ1janiqlXuvRlZGtdBnNs8Hoay+oQa8+rjGAp1sLTkUj8gqogDQlGFLuQxJFU=)
+    certification-course-contract-address: ENC(ShFCYgTNxM5eqLx6GAI2tklFRtBuIKm7sOpg1Qypd+xJUq4BobGtPqphZkJA59r9OAfQMD4wUjA=)
+    trust-certification-contract-address: ENC(WKHGoNi8jyDjVSW8rnAFrCsJtay1gLUj1EQHeZwVM4njLosJmQitO7AUVxPXeopwVKFoQoSPXC4=)
+    trust-ether-faucet-contract-address: ENC(xbJoUoMPopbVtb5a8ZB9/G84KiO1pnLiVC2Q6Q3M5x/jkX6F8inDXCxeoqN5DEF6kNr8ghAK04s=)
+            
 ### Vault Config
 vault:
     uri: http://vault:8200
     token: ENC(lxixxHxhpT29fyIXNOq9mVJGgHbbq6x5nK8lA8w88iGHjm4qZ4g9AQ==)
     wallet-path: tcs-v1/wallets/
-
-# Mail Properties
-mail:
-    templates:
-        base.dir: mail/templates/
-        accounts:
-            pending-validation: user_pending_validation_mail_template
-            user-activated: user_activated_mail_template
-        certificates:
-            ca-disabled: ca_disabled_mail_template
-            ca-enabled: ca_enabled_mail_template
-            disabled: certificate_disabled_mail_template
-            enabled: certificate_enabled_mail_template
-            renewed: certificate_renewed_mail_template
-            request-accepted: certificate_request_accepted_mail_template
-            request-rejected: certificate_request_rejected_mail_template
-            visibility-changed: certificate_visibility_changed_mail_template
-            course-disabled: course_disabled_mail_template
-            course-enabled: course_enabled_mail_template
-            course-deleted: course_deleted_mail_template
-            issue-certificate-request: issue_certificate_request_mail_template
-            new-course-registration-request: new_course_registration_requested_mail_template
-            certificate-generated: certificate_generated_mail_template
-            certification-course-registered: certification_course_registered_mail_template
-            certificate-generated: user_order_completed_mail_templated
-    resources:
-        base.dir: mail/resources/
-    from: ENC(z3xt3g7BV8wn1K9hmNhKjZPIhcJVa54ZTvWqDJYdEw893v4NhHP+EA==)
-
-#### Channels
-channels:
-    new-user-registration: newUserRegistrationProcessor-out-0
-    certification-course-registration: certificationCourseRegistration-out-0
-    new-certification-request: newCertificationRequest-out-0
-    new-tokens-order-approved: newTokensOrderApprovedProcessor-out-0
 
 
 ## SFTP Config
