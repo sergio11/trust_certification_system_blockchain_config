@@ -51,6 +51,22 @@ task:
   ## Check device registration requests
   device.registration.request: 0 0/3 * * * ?
 
+
+# FCM Config
+fcm:
+  app:
+    server:
+      key: test
+    group:
+      prefix: tcs
+  notification:
+    groups:
+      url: https://android.googleapis.com/gcm/notification
+    send:
+      url: https://fcm.googleapis.com/fcm/send
+  sender:
+      id: test
+
 # Mail Properties
 mail:
     templates:
