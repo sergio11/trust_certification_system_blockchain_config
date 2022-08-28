@@ -29,11 +29,17 @@ spring:
               concurrency: 2
           bindings:
               notificationDeliveryRequestProcessor-in-0:
-                  destination: notification-delivery-request-v1
-                  group: tcs-notification-events-processor
-                  consumer:
-                      concurrency: 10
-                      max-attempts: 3
+                destination: notification-delivery-request-v1
+                group: tcs-notification-events-processor
+                consumer:
+                  concurrency: 10
+                  max-attempts: 3
+              devicesManagementProcessor-in-0:
+                destination: devices-management-v1
+                group: tcs-notification-events-processor
+                consumer:
+                  concurrency: 10
+                  max-attempts: 3
 
 # Tasks Config
 task:
@@ -42,6 +48,8 @@ task:
   unsuccessful.mail.forwarding: 0 0/5 * * * ?
   ## Number of emails to be forwarded
   unsuccessful.mail.forwarding.number.of.emails.to.forward: 10
+  ## Check device registration requests
+  device.registration.request: 0 0/3 * * * ?
 
 # Mail Properties
 mail:
