@@ -36,6 +36,17 @@ channels:
     notification-delivery-request: notificationDeliveryRequestProcessor-in-0
     device-management: devicesManagementProcessor-in-0
 
+
+# Uploads Config
+uploads:
+    user:
+        images:
+            strategy: fs
+            folder.name: users
+            avatar:
+                desired:
+                    width: 128
+                    height: 128
 # JWT
 jwt:
     token:
