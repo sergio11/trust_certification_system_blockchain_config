@@ -21,6 +21,11 @@ spring:
                     destination: devices-management-v1
             function:
                 autodetect: false
+    # Upload Manadgement
+    servlet:
+        multipart:
+            max-file-size: 50MB
+            max-request-size: 50MB
 
 # Stream Bridge Channels configuration
 channels:
