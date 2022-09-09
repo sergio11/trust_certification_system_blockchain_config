@@ -63,8 +63,12 @@ spring:
     cache:
         type: redis
     redis:
+        database: 0
         host: redis-server
         port: 6379
+        password: ENC(tKlt1SAdBmmVr17iF0rEJ0keFiaIATo3unPFuH09ymHnqVfjMAzBQKKF21MRXO45)
+        timeout: 60000
+        
 
 logging.level:
   org.springframework.cloud: DEBUG
