@@ -57,6 +57,15 @@ jasypt:
         password: ${JASYPT_ENCRYPTOR_PASSWORD}
         algorithm: PBEWithMD5AndTripleDES
 
+
+# Cache Config
+spring:
+    cache:
+        type: redis
+    redis:
+        host: redis-server
+        port: 6379
+
 logging.level:
   org.springframework.cloud: DEBUG
   org.springframework.security: DEBUG
