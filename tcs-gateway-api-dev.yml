@@ -85,7 +85,14 @@ cryptoCompare:
 translations:
     default-file-location: /opt/i18n/translation_default.xlsx
 
-
+## Facebook Config
+facebook:
+    app:
+        key: ENC(+GSY51+USnMyEdLVD1U5IwndwnNS9PJX)
+        secret: ENC(LJOcwQCYRLai4OWsuY147LGEcxf7PLgWseSViyaq99YntXex/rEu+WynIRM2qiZ0)
+    picture:
+        width: 250
+        height: 250
 # REST
 api:
     base:
