@@ -7,6 +7,15 @@ spring:
             port: 27017
             username: ${MONGO_ROOT_USER}
             password: ${MONGO_ROOT_PASSWORD}
+    # Cache Config
+    cache:
+        type: redis
+    redis:
+        database: 0
+        host: redis-server
+        port: 6379
+        password: ENC(tKlt1SAdBmmVr17iF0rEJ0keFiaIATo3unPFuH09ymHnqVfjMAzBQKKF21MRXO45)
+        timeout: 60000
 
   
 ## Ethereum Config
@@ -56,18 +65,6 @@ jasypt:
     encryptor:
         password: ${JASYPT_ENCRYPTOR_PASSWORD}
         algorithm: PBEWithMD5AndTripleDES
-
-
-# Cache Config
-spring:
-    cache:
-        type: redis
-    redis:
-        database: 0
-        host: redis-server
-        port: 6379
-        password: ENC(tKlt1SAdBmmVr17iF0rEJ0keFiaIATo3unPFuH09ymHnqVfjMAzBQKKF21MRXO45)
-        timeout: 60000
         
 
 logging.level:
