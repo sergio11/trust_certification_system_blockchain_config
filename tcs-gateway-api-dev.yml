@@ -94,6 +94,13 @@ facebook:
     picture:
         width: 250
         height: 250
+
+# Google Config
+google:
+    app:
+        name: ENC(gsCdRhFDwcg6Ob6XKt7A9ZY1J4iL1fHkWhNynQcVm9aJyKYg5oi+Ig==)
+        client.secret.path: /opt/credentials/client_secret.json
+
 # REST
 api:
     base:
