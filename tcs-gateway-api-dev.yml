@@ -51,6 +51,7 @@ ldap:
 
 # Uploads Config
 uploads:
+    directory: /opt/uploads
     user:
         images:
             strategy: fs
