@@ -40,7 +40,7 @@ channels:
 # LDAP configuration
 ldap:
   uri: ldap://openldap:389/dc=trustcertificationsystem,dc=org
-  admin-dn: uid=tcs-admin,ou=people,dc=trustcertificationsystem,dc=org
+  admin-dn: uid=admin-tcs,ou=people,dc=trustcertificationsystem,dc=org
   admin-password: ENC(jnD59Qj4zY2SP9Nq3EoNXBEu+fQ0Wx9paG3g+rbLX3I=)
   search-base: ou=people
   search-filter: (uid={0})
