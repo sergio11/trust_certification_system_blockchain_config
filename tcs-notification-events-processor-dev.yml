@@ -66,7 +66,7 @@ fcm:
 # Mail Properties
 mail:
     templates:
-        base.dir: /opt/mail_templates
+        base.dir: /opt/mail_templates/
         accounts:
             pending-validation: user_pending_validation_mail_template
             user-activated: user_activated_mail_template
