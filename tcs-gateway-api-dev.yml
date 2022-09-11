@@ -1,4 +1,9 @@
 spring:
+    ldap:
+        url: ldap://openldap:389
+        base: dc=trustcertificationsystem,dc=org
+        username: uid=admin-tcs,ou=people,dc=trustcertificationsystem,dc=org
+        password: ENC(w+enwl3piPRI2ffk2a8uI7dQ45MgbvgcAcTY+etH1/0=)
     cloud:
         stream:
             kafka:
@@ -35,19 +40,6 @@ channels:
     new-tokens-order-approved: newTokensOrderApprovedProcessor-in-0
     notification-delivery-request: notificationDeliveryRequestProcessor-in-0
     device-management: devicesManagementProcessor-in-0
-
-
-# LDAP configuration
-ldap:
-  uri: ldaps://openldap:636/dc=trustcertificationsystem,dc=org
-  admin-dn: uid=admin-tcs,ou=people,dc=trustcertificationsystem,dc=org
-  admin-password: ENC(jnD59Qj4zY2SP9Nq3EoNXBEu+fQ0Wx9paG3g+rbLX3I=)
-  search-base: ou=people
-  search-filter: (uid={0})
-  group-search-base: ou=groups
-  group-search-filter: (memberUid={1})
-  group-role-attribute: cn
-
 
 # Uploads Config
 uploads:
