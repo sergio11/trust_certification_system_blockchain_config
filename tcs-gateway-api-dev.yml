@@ -1,9 +1,4 @@
 spring:
-    ldap:
-        url: ldap://openldap:389
-        base: dc=trustcertificationsystem,dc=org
-        username: uid=admin-tcs,ou=people,dc=trustcertificationsystem,dc=org
-        password: ENC(w+enwl3piPRI2ffk2a8uI7dQ45MgbvgcAcTY+etH1/0=)
     cloud:
         stream:
             kafka:
@@ -52,6 +47,14 @@ uploads:
                 desired:
                     width: 128
                     height: 128
+
+# Ldap Config
+ldap:
+    url: ldap://openldap:389
+    base: dc=trustcertificationsystem,dc=org
+    username: uid=admin-tcs,ou=people,dc=trustcertificationsystem,dc=org
+    password: ENC(w+enwl3piPRI2ffk2a8uI7dQ45MgbvgcAcTY+etH1/0=)
+
 # JWT
 jwt:
     token:
