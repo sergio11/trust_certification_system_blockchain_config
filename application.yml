@@ -70,5 +70,6 @@ jasypt:
 logging.level:
   org.springframework.cloud: DEBUG
   org.springframework.security: DEBUG
+  org.springframework.ldap: DEBUG
   com.dreamsoftware.tcs: DEBUG
   logging.level.org.web3j.protocol.http: TRACE
