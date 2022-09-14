@@ -53,7 +53,7 @@ ldap:
     url: ldap://openldap:389
     base: dc=trustcertificationsystem,dc=org
     base-user-search: ou=people,dc=trustcertificationsystem,dc=org
-    username: uid=admin-tcs,ou=people
+    username: uid=admin-tcs,ou=people,dc=trustcertificationsystem,dc=org
     password: ENC(w+enwl3piPRI2ffk2a8uI7dQ45MgbvgcAcTY+etH1/0=)
 
 # JWT
