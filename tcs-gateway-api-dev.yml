@@ -9,7 +9,7 @@ spring:
             bindings:
                 newUserRegistrationProcessor-in-0:
                     destination: new-user-registration-v1
-                certificationCourseRegistration-in-0:
+                newCertificationCourseRegistration-in-0:
                     destination: course-registration-v1
                 newCertificationRequest-in-0:
                     destination: new-certification-request-v1
@@ -30,7 +30,7 @@ spring:
 # Stream Bridge Channels configuration
 channels:
     new-user-registration: newUserRegistrationProcessor-in-0
-    certification-course-registration: certificationCourseRegistration-int-0
+    new-certification-course-registration: newCertificationCourseRegistration-in-0
     new-certification-request: newCertificationRequest-in-0
     new-tokens-order-approved: newTokensOrderApprovedProcessor-in-0
     notification-delivery-request: notificationDeliveryRequestProcessor-in-0
