@@ -28,7 +28,7 @@ ethereum:
     gas-price: 1000000000
     gas-limit: 993613
     token-management-contract-address: ENC(AhrTD/K3PP9z0GfUPyKhYHScXdo0h43jYxCuxVE+2fSRtqPGyQOJIFBwIftvr40mqTtdktbZcGI=)
-    certification-authority-contract-address: ENC(ZCqLMZfdolN9hUD4nmWCEzCK8PVHxNBVWM8+7mCSLuSJuODHwtp24TIMcHjndMqXwmgdBEbxT0s=)
+    certification-authority-contract-address: ENC(YPhgbM96YBWFyxVE4422mJLv+30N+mjrP9ORHyHUcF5URx8kodKKZgvyaaw3AhKskbTi/Of2B94=)
     certification-course-contract-address: ENC(Nl89VEk5GTUWC1n2n9mJs9UKbP3w6dCdNgTEwhNw08s7/9UK5fiQpAGavg4nnn0Vyd+W3H6Q3jg=)
     trust-certification-contract-address: ENC(5xXCbIEWJdw2HGvidevGYKZ/0CT63niarS7tHoSuFitXD+4gZ1MKTRUUFFCk30lENGn8bHhcmeo=)
     trust-ether-faucet-contract-address: ENC(LCh4QedK412cuEYtvZfuXcwexdDyBZsW3OkGC83efb7mCPCJ8kGFf58VGrkzMO7vozpzPe78nks=)
