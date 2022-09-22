@@ -60,6 +60,12 @@ i18n:
     default.locale: en_GB
     locale.supported: es_ES,en_GB
 
+# Crypt Service Config
+crypt:
+    password: ENC(sucS/grvNPGMxNFcfR3FsbzEWg3a0RTceOemhivFqKcQzRjC7FYXVCKxU2ptkWcv)
+    salt: ENC(+D/+VILc9K88IgZe9zTtAmRHaXRRI6cenS/3A9vrKH2/uJF/rAZPjw==)
+    separator: ENC(wgn3uHGzjW0gjcos7FqhtHam27cxgjEoeOQ2yJUMQ0hXOjqAYVkT8XiGfItuo7jz)
+
 ######## Encryption Configuration #####
 jasypt:
     encryptor:
