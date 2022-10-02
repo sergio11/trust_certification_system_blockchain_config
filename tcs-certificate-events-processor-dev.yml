@@ -34,7 +34,10 @@ spring:
 # Certificate Generator Config
 certificateGenerator:
   base-folder: /opt/generator/
-  watermark-file: tcs_certificate_background.pdf
+  background:
+      innovate: tcs_background_innovate.pdf
+      professional: tcs_background_professional.pdf
+      standard: tcs_background_standard.pdf
   template-file: tcs_academic_certificate_template.docx
   timestamp-authority: http://sha256timestamp.ws.symantec.com/sha256/timestamp
   keystore:
