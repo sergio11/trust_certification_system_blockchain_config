@@ -13,31 +13,36 @@ spring:
               concurrency: 2
           bindings:
               newUserRegistrationProcessor-in-0:
-                  destination: new-user-registration-v1
-                  group: tcs-user-events-processor
+                destination: new-user-registration-v1
+                group: tcs-user-events-processor
               newUserRegistrationProcessor-out-0:
-                  destination: user-registered-v1
+                destination: user-registered-v1
               userRegisteredProcessor-in-0:
-                  destination: user-registered-v1
-                  group: tcs-user-events-processor
-                  consumer:
-                      concurrency: 10
-                      max-attempts: 3
+                destination: user-registered-v1
+                group: tcs-user-events-processor
+                consumer:
+                  concurrency: 10
+                  max-attempts: 3
               userRegisteredProcessor-out-0:
-                  destination: notification-delivery-request-v1
+                destination: notification-delivery-request-v1
+              userManagementProcessor-in-0:
+                destination: user-management-v1
+                group: tcs-user-events-processor
+              userManagementProcessor-out-0:
+                destination: notification-delivery-request-v1
               newTokensOrderApprovedProcessor-in-0:
-                  destination: new-tokens-order-approved-v1
-                  group: tcs-user-events-processor
+                destination: new-tokens-order-approved-v1
+                group: tcs-user-events-processor
               newTokensOrderApprovedProcessor-out-0:
-                  destination: tokens-order-completed-v1
+                destination: tokens-order-completed-v1
               tokensOrderCompletedProcessor-in-0:
-                  destination: tokens-order-completed-v1
-                  group: tcs-user-events-processor
-                  consumer:
-                      concurrency: 10
-                      max-attempts: 3
+                destination: tokens-order-completed-v1
+                group: tcs-user-events-processor
+                consumer:
+                  concurrency: 10
+                  max-attempts: 3
               tokensOrderCompletedProcessor-out-0:
-                  destination: notification-delivery-request-v1
+                destination: notification-delivery-request-v1
 
 
 # Tasks Config
