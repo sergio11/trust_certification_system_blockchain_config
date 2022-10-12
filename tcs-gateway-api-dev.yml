@@ -7,8 +7,6 @@ spring:
                     auto-create-topics: true
                     configuration.auto.offset.reset: latest
             bindings:
-                newUserRegistrationProcessor-in-0:
-                    destination: new-user-registration-v1
                 userManagementProcessor-in-0:
                     destination: user-management-v1
                 newCertificationCourseRegistration-in-0:
@@ -31,7 +29,6 @@ spring:
 
 # Stream Bridge Channels configuration
 channels:
-    new-user-registration: newUserRegistrationProcessor-in-0
     user-management: userManagementProcessor-in-0
     new-certification-course-registration: newCertificationCourseRegistration-in-0
     new-certification-request: newCertificationRequest-in-0
