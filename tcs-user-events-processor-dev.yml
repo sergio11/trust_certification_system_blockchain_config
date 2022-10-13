@@ -40,4 +40,7 @@ task:
   ## Task to cancel account removal processes
   ## At second :15 of minute :20 of every hour
   cancel.account.deletion.proccess: 15 20 * * * ?
+  ## Task to remove inactive password reset tokens
+  ## At second :15 of minute :10 of every hour
+  delete.expired.password.reset.tokens: 15 10 * * * ?
         
