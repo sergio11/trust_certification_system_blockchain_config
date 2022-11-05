@@ -12,22 +12,13 @@ spring:
             consumer:
               concurrency: 2
           bindings:
-              newIssueCertificateRequestProcessor-in-0:
-                  destination: new-certification-request-v1
+              certificationManagementProcessor-in-0:
+                  destination: certification-management-v1
                   group: tcs-certificate-events-processor
                   consumer:
                     concurrency: 10
                     max-attempts: 3
-              newIssueCertificateRequestProcessor-out-0:
-                  destination: certification-issued-v1
-                  group: tcs-certificate-events-processor
-              newCertificateIssuedProcessor-in-0:
-                  destination: certification-issued-v1
-                  group: tcs-certificate-events-processor
-                  consumer:
-                    concurrency: 10
-                    max-attempts: 3
-              newCertificateIssuedProcessor-out-0:
+              certificationManagementProcessor-out-0:
                   destination: notification-delivery-request-v1
 
 

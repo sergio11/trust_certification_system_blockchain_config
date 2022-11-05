@@ -13,7 +13,7 @@ spring:
               concurrency: 2
           bindings:
             courseManagementProcessor-in-0:
-              destination: user-management-v1
-              group: tcs-user-events-processor
+              destination: course-management-v1
+              group: tcs-course-events-processor
             courseManagementProcessor-out-0:
               destination: notification-delivery-request-v1
