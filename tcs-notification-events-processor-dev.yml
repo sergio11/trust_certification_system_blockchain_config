@@ -70,8 +70,8 @@ mail:
         accounts:
             pending-validation: user_pending_validation_mail_template
             user-activated: user_activated_mail_template
-            user-order-completed: user_order_completed_mail_templated
-            reset-password: user_reset_password_mail_templated
+            user-order-completed: user_order_completed_mail_template
+            reset-password: user_reset_password_mail_template
         certificates:
             ca-disabled: ca_disabled_mail_template
             ca-enabled: ca_enabled_mail_template
@@ -91,10 +91,10 @@ mail:
             course-edition-disabled: course_edition_disabled_mail_template
             course-edition-enabled: course_edition_enabled_mail_template
             course-edition-deleted: course_edition_deleted_mail_template
+            course-edition-registered: course_edition_registered_mail_template
+            course-edition-updated: course_edition_updated_mail_template
             issue-certificate-request: issue_certificate_request_mail_template
-            new-course-registration-request: new_course_registration_requested_mail_template
             certificate-generated: certificate_generated_mail_template
-            certification-course-registered: certification_course_registered_mail_template
     resources:
         base.dir: /opt/mail_templates
     from: ENC(z3xt3g7BV8wn1K9hmNhKjZPIhcJVa54ZTvWqDJYdEw893v4NhHP+EA==)
