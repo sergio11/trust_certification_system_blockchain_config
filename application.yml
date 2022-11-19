@@ -7,15 +7,6 @@ spring:
             port: 27017
             username: ${MONGO_ROOT_USER}
             password: ${MONGO_ROOT_PASSWORD}
-    # Cache Config
-    cache:
-        type: redis
-    redis:
-        database: 0
-        host: redis-server
-        port: 6379
-        password: ENC(tKlt1SAdBmmVr17iF0rEJ0keFiaIATo3unPFuH09ymHnqVfjMAzBQKKF21MRXO45)
-        timeout: 60000
 
   
 ## Ethereum Config
@@ -27,11 +18,11 @@ ethereum:
     root-private-key: ENC(ari+RGHwCGuqlTyrmBCUFSYiGUH5G8nIieWa4mYaV8Crjho5sCnDcit1DVfaVX8Vn+D7o717ZmHdPsb7nGzOimSGeKPHEmzXfuXTkFnJvlk=)
     gas-price: 1000000000
     gas-limit: 993613
-    token-management-contract-address: ENC(hLYpXLaBIFP7HceHhoR+qKrSBE/vjl0D6jeX6ohpcWX2E2yGntIvJmhN9V6jTW9zKD0uOgWZZoQ=)
-    certification-authority-contract-address: ENC(cMnhAm8XyJFUCfGKccnL0Fai3JFq+EhSWUYahhAYFXOrVVatBSCgu0spRBBn6mYfh28mLRmsnmo=)
-    certification-course-contract-address: ENC(NrhAu9cqvZrs3+/mpLdH67DC4HcCTjRL7Ad+yWcjwt5+vmexOvCUCMqd9DbUAklF2PfsEu4b1nI=)
-    trust-certification-contract-address: ENC(w1zVN9sNevR5Kjyb9oRUoWnkwkny+1/v5bd1Ke+nkL3O7ovLtFFQucsvkuMcc+sGTd41BPhFkHs=)
-    trust-ether-faucet-contract-address: ENC(3i+wHzIpPomXJYMuhZ2jDBRln8FGPIWQa0+MsqoUmRjUVHtrEuU/7R0MQ4X6p8ygGdbQNAbZUkw=)
+    token-management-contract-address: ENC(ZTyJ8puktc1UOECGhqIj9p+WaozMB1maSwpZz0qBZFg9+ny/i4D6/m251TVWoGC9ZPSo1leFV2s=)
+    certification-authority-contract-address: ENC(0UPZ3gtqmtVXoQq0j7RaTqjJ+qh1IhZucYcWiQyq+sR1SDsGwp1dC9T3BIhix3ZqzxzybyM6btc=)
+    certification-course-contract-address: ENC(afWDiZxgmvDijCx2EEoE8daNh7Fce+z7UtXS+8DGqOxOsAe6FuL9oKsbZq+fm1joVuV/5e9kxwk=)
+    trust-certification-contract-address: ENC(t5qs/yYO/7VOkNXHuCtIlPncyWdOcGZEhBYzA3psSo3SBJxtKLYZeD7m//oMmQ8ZBtn84EDk3Mg=)
+    trust-ether-faucet-contract-address: ENC(OFafdawJK/SB82HXkm7NcUHv1zyGyuLPdWazX3c11MeaU40+NPwD0RaMl+pCuPTEaWWfCEXAE8o=)
             
 ### Vault Config
 vault:
