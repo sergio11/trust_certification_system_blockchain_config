@@ -27,7 +27,7 @@ ethereum:
 ### Vault Config
 vault:
     uri: http://vault:8200
-    token: ENC(0kQNOOi/w7gpCA266y2n86pflNKerGH2A/2eBczcKoM/GU4S3lydDA==)
+    token: ENC(2q19s7D0xtI/CyJFDT5L2MYmWoI0CYAUAqvlNljctM8S5n3eizsabA==)
     wallet-path: tcs-v1/wallets/
 
 
