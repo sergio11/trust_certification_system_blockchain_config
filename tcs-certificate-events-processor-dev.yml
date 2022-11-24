@@ -26,10 +26,11 @@ spring:
 certificateGenerator:
   base-folder: /opt/generator/
   background:
-      innovate: tcs_background_innovate.pdf
-      professional: tcs_background_professional.pdf
-      standard: tcs_background_standard.pdf
-  template-file: tcs_academic_certificate_template.docx
+      achievement: tcs_background_achievement.pdf
+      attendance: tcs_background_attendance.pdf
+  templates: 
+      achievement: tcs_achievement_certificate_template.docx
+      attendance: tcs_attendance_certificate_template.docx 
   timestamp-authority: http://sha256timestamp.ws.symantec.com/sha256/timestamp
   keystore:
     file: tcs_keystore.jks
@@ -46,3 +47,4 @@ certificateGenerator:
     course-name: "[[COURSE_NAME]]"
     student-qualification: "[[STUDENT_QUALIFICATION]]"
     certificate-date: "[[CERTIFICATE_DATE]]"
+    executive-director: "[[EXECUTIVE_DIRECTOR]]"
