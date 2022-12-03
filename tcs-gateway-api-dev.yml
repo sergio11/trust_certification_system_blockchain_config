@@ -72,6 +72,7 @@ paypal:
     client:
         id: ENC(Fl67YKHtgtLFXSIjkbBmfz0Q+EJoaIggezk7IzJWc5pKTHr7WHRP0FVj8I+/fOKy/OZ6J0SRaD5hpAdqYvhiDAbzQzPCaBwVgYZbqBydFtYYu1iZQJbUpXjlRVQhgeAM)
         secret: ENC(D2Xw9qRaLpqAAvpoUaB4YCo1r9Bif1lEYKO50JUEc9P2Qy09odVx7ifHIb9sL+hQOkXWMusQxWaFzPz5zavXH/ONTSxhtz4l44cWQQtVlDIoWm1dp3474MjyVd0KlZlB)
+    payeeEmailAddress: ENC(Yi3z0TaWclFXRqWwupyueNIHt+OMeIqHRcAzd8y3vhgbpvO0mBMsmmgQv2eKG0BB)
 
 # Crypto Compare Gateway
 cryptoCompare:
