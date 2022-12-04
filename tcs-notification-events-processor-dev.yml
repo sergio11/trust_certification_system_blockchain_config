@@ -93,6 +93,7 @@ mail:
             course-edition-deleted: course_edition_deleted_mail_template
             course-edition-registered: course_edition_registered_mail_template
             course-edition-updated: course_edition_updated_mail_template
+            course-edition-enrolled: course_edition_enrolled_mail_template
             issue-certificate-request: issue_certificate_request_mail_template
             certificate-generated: certificate_generated_mail_template
     resources:
