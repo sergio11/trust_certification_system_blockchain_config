@@ -62,8 +62,21 @@ jasypt:
     encryptor:
         password: ${JASYPT_ENCRYPTOR_PASSWORD}
         algorithm: PBEWithMD5AndTripleDES
-        
 
+
+management:
+    endpoint:
+        health:
+            enabled: true
+            show-details: always
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+        jmx:
+            exposure:
+                include: '*'
+        
 logging.level:
   org.springframework.cloud: DEBUG
   org.springframework.security: DEBUG
