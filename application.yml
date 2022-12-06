@@ -18,7 +18,7 @@ ethereum:
     root-private-key: ENC(ari+RGHwCGuqlTyrmBCUFSYiGUH5G8nIieWa4mYaV8Crjho5sCnDcit1DVfaVX8Vn+D7o717ZmHdPsb7nGzOimSGeKPHEmzXfuXTkFnJvlk=)
     gas-price: 1000000000
     gas-limit: 993613
-    token-management-contract-address: ENC(98S4DtJhoBIIGX/siYcAlY3Q4Ws7gq3ciwKGbJYpomrP397VUmLXlvdglJajaSXJThjppcdXe4A=)
+    token-management-contract-address: ENC(cQ5MdBCQlY297ILZjsg3h6jcGEQ2DACkSHpM1MQyhSRa8uvnqL4PqK6DdzcnACuwBjSNiucQ3Po=)
     certification-authority-contract-address: ENC(Ox0cb4LBfcxntmRjqwZW+R1GBzICLHAB+ttEYD9ajEe+rSEtE53UXizgJUFInjBXFed7TC5jbzI=)
     certification-course-contract-address: ENC(J9GkXVOnlLDZXNHuJN3WlHvvSHMeY6zMwO2kGD9TkjaIzHDRXiolGskIe561FAmQtWvWLbhi/qM=)
     trust-certification-contract-address: ENC(ibwHBVrjZvcTfJDxHjfWPzT18cDrLbd+aH1M7CrvkIO02uu8z8dHNuzoz+e3okW1fAFW7Gso69A=)
