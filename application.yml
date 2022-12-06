@@ -18,11 +18,11 @@ ethereum:
     root-private-key: ENC(ari+RGHwCGuqlTyrmBCUFSYiGUH5G8nIieWa4mYaV8Crjho5sCnDcit1DVfaVX8Vn+D7o717ZmHdPsb7nGzOimSGeKPHEmzXfuXTkFnJvlk=)
     gas-price: 1000000000
     gas-limit: 993613
-    token-management-contract-address: ENC(wYqsAxN8B825GYqzauuhp5K7ybrcvoBRpM3okAfDlzBtTr62yaw9o38NVYC8RNHphyyXnYvnswU=)
-    certification-authority-contract-address: ENC(+JmWc0vzTdS9VU6DZXkDu/JCNms+KNcx5dM9aQt/nBllaEYzMoc9GIy8+PXxlAkL6iFtqwed6E4=)
-    certification-course-contract-address: ENC(Le4QYMrnzlm1PMZdDqC9yYUCcjBI5dqzDE4FiLnD5US4A1lEB6yc+QeS5ReexSJeKyCGugtNvK4=)
-    trust-certification-contract-address: ENC(+gJK/HlNvSuVgNNjBh6ilwRBQWlL2CoXU6vZeeFaETlD7Tu6XHK/8M5OjRT5IgT+xmcQDLtcvvY=)
-    trust-ether-faucet-contract-address: ENC(4hq221iB7/ybQaSX5CCGPxnQI/wB+TsnyouIheFX8wcT0rCD9hKKtla0/1SPk6tvRK1YzwTG+zE=)
+    token-management-contract-address: ENC(98S4DtJhoBIIGX/siYcAlY3Q4Ws7gq3ciwKGbJYpomrP397VUmLXlvdglJajaSXJThjppcdXe4A=)
+    certification-authority-contract-address: ENC(Ox0cb4LBfcxntmRjqwZW+R1GBzICLHAB+ttEYD9ajEe+rSEtE53UXizgJUFInjBXFed7TC5jbzI=)
+    certification-course-contract-address: ENC(J9GkXVOnlLDZXNHuJN3WlHvvSHMeY6zMwO2kGD9TkjaIzHDRXiolGskIe561FAmQtWvWLbhi/qM=)
+    trust-certification-contract-address: ENC(ibwHBVrjZvcTfJDxHjfWPzT18cDrLbd+aH1M7CrvkIO02uu8z8dHNuzoz+e3okW1fAFW7Gso69A=)
+    trust-ether-faucet-contract-address: ENC(l5f6l9no9Xq6pKhC9O5jjDbnPYlWcDWcGTRdnZdoJevwVdoWAAtnj9QRIHBXxKbgzq63D++tirU=)
             
 ### Vault Config
 vault:
