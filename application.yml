@@ -84,3 +84,4 @@ logging.level:
   org.springframework.ldap: DEBUG
   com.dreamsoftware.tcs: DEBUG
   logging.level.org.web3j.protocol.http: TRACE
+  org.apache.pdfbox: DEBUG
